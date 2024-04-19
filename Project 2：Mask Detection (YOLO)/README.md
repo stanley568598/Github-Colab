@@ -492,21 +492,14 @@
 
         - YOLOV3 偵測的濾鏡【 filter = ( C + 5 ) * B 】。
         
-            - C 是 class 類別數量。
-        
-            - B 是每個 Feature Map 可以偵測的 Bounding Box 數量。
-        
-            - 5 代表的是此 Bounding Box 的網格特徵 ( x, y, w, h, confidence score )。
+            > C 是 class 類別數量；B 是每個 Feature Map 可以偵測的 Bounding Box 數量；
+            > 5 代表的是此 Bounding Box 的網格特徵 ( x, y, w, h, confidence score )。
 
         - 原本設定 80 個 class：filter = ( 80 + 5 ) * 3 = 255。
         
         - 調整成，3 個 class：filter = ( 3 + 5 ) * 3 = 24。
             
-            - good：有戴口罩
-            
-            - bad：沒戴口罩
-            
-            - none：沒戴好口罩
+            > good：有戴口罩；bad：沒戴口罩；none：沒戴好口罩
     
         ```py
         # line 127: filters
