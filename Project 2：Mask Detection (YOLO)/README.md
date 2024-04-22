@@ -122,7 +122,9 @@
 
 1. darknet 編譯配置：Makefile。
     
-    Issue：下載完 darknet 原始碼後需要使用 make 指令進行編譯，編譯的過程實際上是執行「Makefile」中的語句。要成功編譯，還需根據我們自身伺服器環境的情況對 MakeFile 文件進行修改。
+    Issue：下載完 darknet 原始碼後需要使用 make 指令進行編譯，編譯的過程實際上是執行「Makefile」中的語句。
+    
+    要成功編譯，還需根據我們自身伺服器環境的情況對 MakeFile 文件進行修改。
     
     <details>
     
@@ -236,7 +238,7 @@
 
         - cudnn 在 8.x 及之後的版本，已修改大量 cudnn7.x 的寫法。
     
-        - 例如：對於原生於 cudnn7.x 的 darknet，新版本 cudnn8.x 已移除 CUDNN_CONVOLUTION_FWD_SPECIFY_WORKSPACE_LIMIT 相關定義。
+            > 例如：對於原生於 cudnn7.x 的 darknet，新版本 cudnn8.x 已移除 CUDNN_CONVOLUTION_FWD_SPECIFY_WORKSPACE_LIMIT 相關定義。
 
         - 修改 convolutional_layer.c，增加針對 CUDNN_MAJOR>=8 的處理。
 
