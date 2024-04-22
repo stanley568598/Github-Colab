@@ -8,8 +8,6 @@
 > 
 > <summary>更多相關內容介紹</summary>
 > 
-> <br>
-> 
 > > ## 卷積神經網絡 ( Convolutional Neural Network，CNN )
 > > 
 > > 神經網路是使用神經元形成節點網路的模型，透過每個神經元的計算，分析各種因素與結果的關聯性，找出權重大的成因，產生分類結果。
@@ -18,8 +16,6 @@
 > > <details>
 > > 
 > > <summary>更多詳細內容</summary>
-> >
-> > <br>
 > >
 > > > ### Convolution Layer ( 卷積層 )
 > > > 
